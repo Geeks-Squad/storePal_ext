@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body style="width:500px;">
+
+<div id="myModal" style="width:500px; ">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <!-- general form elements -->
+                <b>Welcome</b> to <img src="icon2.png" width="100px"> Store<br><hr>
+
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" method="post" action="/addPaper" enctype=multipart/form-data>
+                    <div class="box-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-2">
+                            <input type="name" class="form-control" style="width:80%;margin-bottom: -20%;" name="name" id="exampleInputPassword1"  required placeholder="Eg : fan , pi board">
+                                    <button type="submit" class="btn pull-right"><i class="fa fa-search" style="color:crimson;"></i> </button>        </div>
+                                <div class="col-sm-2">
+
+                                </div></div>
+                        </div>
+                        </div>
+                </form>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h4>Are you looking for?</h4>
+                        <div class="row">
+                            <div class="col-lg-2" style="width: 50px;">
+                                <div class="card" style="width: 100px; ">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 120px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 240px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 240px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"> <i class="fa fa-exchange" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fan</i></li>
+                                <li class="list-group-item"><i class="fa fa-exchange" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Barcode Reader</i></li>
+                                <li class="list-group-item"><i class="fa fa-exchange" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QR Reader</i></li>
+                            </ul>
+                        </div>-->
+
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Recommendations</h4>
+                        <div class="row">
+                            <div class="col-lg-2" style="width: 50px;">
+                                <div class="card" style="width: 100px; ">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 120px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 240px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100px; margin-top: -630%; margin-left: 240px;">
+                                    <img class="card-img-top" src="icon.jpg" style="width: 100px;" alt="Card image cap">
+                                    <div class="card-block">
+                                        <p class="card-text">Price</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script>
+    $("#myModal").modal()
+</script>
+</html>
