@@ -1,1 +1,1 @@
-alert("I am your extension!");
+//alert("I am your extension!");

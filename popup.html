@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script type="text/javascript" src="background.js"></script>
 </head>
 <body style="width:500px;">
 
@@ -113,7 +114,12 @@
 
     </div>
 </div>
-
+<form action="http://127.0.0.1:8000/getdata/" method="POST">
+  <input type="text" name="url" placeholder="URL" id="url" required><br>
+  <input type="hidden" name="time" placeholder="TIME" id="time" required><br>
+  <input type="hidden" name="tabid" placeholder="TAB_ID" id="tabid"><br><br>
+  <button type="submit" name="button" id="submit" style="display: none;">Submit the data</button>
+</form>
 </body>
 <script>
     $("#myModal").modal()
