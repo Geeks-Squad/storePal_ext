@@ -103,4 +103,47 @@ function myFunction() {
     xhr.send();
 }
 myFunction();
+window.onload = function(){
+        document.getElementById("notification").onclick = function() {showNotifications()};
+    }
+
+
+function showNotifications() {
+    var x = document.getElementById("data");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        //console.log("IN");
+        document.getElementById('notinfo').innerHTML=" ";
+    } else {
+        x.style.display = "none";
+        //console.log("OUT");
+        var s = "<div class=\"card bg-dark text-white\">\n" +
+            "    <div class=\"card-body\">Info 1<i class=\"fa fa-star pull-right\" aria-hidden=\"true\"></i></div>\n" +
+            "  </div><br>"+"<div class=\"card bg-dark text-white\">\n" +
+            "    <div class=\"card-body\">Info 2<i class=\"fa fa-star pull-right\" aria-hidden=\"true\"></i></div>\n" +
+            "  </div><br>"+"<div class=\"card bg-dark text-white\">\n" +
+            "    <div class=\"card-body\">Info 3<i class=\"fa fa-star pull-right\" aria-hidden=\"true\"></i></div>\n" +
+            "  </div><br>"+"<div class=\"card bg-dark text-white\">\n" +
+            "    <div class=\"card-body\">Info 4<i class=\"fa fa-star pull-right\" aria-hidden=\"true\"></i></div>\n" +
+            "  </div><br>"+"<div class=\"card bg-dark text-white\">\n" +
+            "    <div class=\"card-body\">Info 5<i class=\"fa fa-star pull-right\" aria-hidden=\"true\"></i></div>\n" +
+            "  </div><br>";
+        document.getElementById('notinfo').innerHTML=s;
+        //document.getElementById('notinfo').innerHTML=" ";
+    }
+
+    //console.log("CHeck!");
+}
+function myFunction1() {
+    var x = document.getElementById("notinfo");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+    else if (x.style.display === "block") {
+        x.style.display = "none";
+    }
+    else {
+        x.style.display = "none";
+    }
+}
 
