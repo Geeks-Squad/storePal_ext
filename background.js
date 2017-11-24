@@ -53,6 +53,65 @@ chrome.tabs.onCreated.addListener(function(tab) {
      http.send('url=' + params);
    }
 });
+//nudging
+/*chrome.notifications.create(id, opt, creationCallback);
+var opt = {
+    type: "basic",
+    title: "Primary Title",
+    message: "Primary message to display",
+    iconUrl: "icon.jpg"
+}
+
+chrome.notifications.onButtonClicked.addListener(replyBtnClick);
+function replyBtnClick {
+    //Write function to respond to user action.
+    console.log("button on notiification")
+}
+function show() {
+    var time = /(..)(:..)/.exec(new Date());     // The prettyprinted time.
+    var hour = time[1] % 12 || 12;               // The prettyprinted hour.
+    var period = time[1] < 12 ? 'a.m.' : 'p.m.'; // The period of the day.
+    new Notification(hour + time[2] + ' ' + period, {
+        icon: 'icon2.png',
+        body: 'Time to make the toast.'
+    });
+}
+show();
+var warningId = 'notification.warning';
+
+function hideWarning(done) {
+    chrome.notifications.clear(warningId, function() {
+        if (done) done();
+    });
+}
+function showWarning() {
+    hideWarning(function() {
+        chrome.notifications.create(warningId, {
+            iconUrl: chrome.runtime.getURL('images/icon-48.png'),
+            title: 'Removal required',
+            type: 'basic',
+            message: chrome.i18n.getMessage('name') + ' is obsolete ' +
+            'and must be removed. A replacement Extension ' +
+            'is available.',
+            buttons: [{ title: 'Learn More' }],
+            isClickable: true,
+            priority: 2,
+        }, function() {});
+    });
+}
+//showWarning();*/
+var opt = {
+    type: "image",
+    title: "Primary Title",
+    message: "Primary message to display",
+    imageUrl:"icon2.png",
+    iconUrl: "icon2.png"
+};
+chrome.notifications.create(opt);
+chrome.notifications.onClicked.addListener(function f(){notify();});
+function notify() {
+    chrome.tabs.create({url: "http://www.honeywellstore.com/store/categories/honeywell-vacuums.htm"});
+}
 
 
 function myFunction() {
